@@ -1,8 +1,7 @@
 import React from 'react';
 import { Wifi, Tv, Coffee, Wind, Maximize, ArrowRight } from 'lucide-react';
-import { Room } from '../types';
 
-const rooms: Room[] = [
+const rooms = [
   {
     id: 'deluxe-king',
     name: 'Deluxe King Suite',
@@ -38,7 +37,7 @@ const rooms: Room[] = [
   }
 ];
 
-const RoomSuiteGrid: React.FC = () => {
+const RoomSuiteGrid = () => {
   return (
     <section id="suites" className="py-24 bg-stone-50">
       <div className="max-w-7xl mx-auto px-6">
