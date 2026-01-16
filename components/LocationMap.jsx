@@ -1,7 +1,7 @@
 import React from 'react';
 import { MapPin, Phone, Mail } from 'lucide-react';
 
-const LocationMap: React.FC = () => {
+const LocationMap = () => {
   return (
     <section id="location" className="w-full bg-obsidian-900 text-white">
       <div className="flex flex-col lg:flex-row h-full lg:h-[600px]">
