@@ -21,7 +21,7 @@ const amenitiesList = [
   { icon: Clock, title: "24h Concierge", desc: "At your service, day or night." },
 ];
 
-const AmenitiesIcons: React.FC = () => {
+const AmenitiesIcons = () => {
   return (
     <section id="amenities" className="py-24 bg-white relative overflow-hidden">
         {/* Background Decorative Element */}
