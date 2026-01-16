@@ -1,15 +1,14 @@
 import React, { useState } from 'react';
 import { Calendar, Users, ArrowRight } from 'lucide-react';
-import { DateRange } from '../types';
 
-const HeroGallery: React.FC = () => {
-  const [bookingData, setBookingData] = useState<DateRange>({
+const HeroGallery = () => {
+  const [bookingData, setBookingData] = useState({
     startDate: '',
     endDate: '',
     guests: 2
   });
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+  const handleInputChange = (e) => {
     const { name, value } = e.target;
     setBookingData(prev => ({
       ...prev,
@@ -17,7 +16,7 @@ const HeroGallery: React.FC = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Checking availability for:', bookingData);
     alert('Checking availability... (This is a demo)');
