@@ -6,7 +6,7 @@ import AmenitiesIcons from './components/AmenitiesIcons';
 import LocationMap from './components/LocationMap';
 import Footer from './components/Footer';
 
-const App: React.FC = () => {
+const App = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
